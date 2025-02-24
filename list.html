@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo List</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/ipad_frame.css">
+    <link rel="stylesheet" href="./css/list_header.css">
+    <link rel="stylesheet" href="./css/border_list.css">
+</head>
+<body>
+    <div class="ipad-frame">
+        <header class="list-header">
+            <h1>메모 목록</h1>
+            <span class="phone-clock"></span>
+        </header>
+        <div class="board-list-container"></div>
+        <footer>
+            <button onclick="location.href='./article.html'">메모 작성</button>
+        </footer>
+    </div>
+    <script src="./script/clock.js"></script>
+    <script src="./script/list_service.js"></script>
+    <script src="./script/delete_service.js"></script> <!-- 추가된 delete_service.js -->
+</body>
+</html>

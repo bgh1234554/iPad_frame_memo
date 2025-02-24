@@ -1,0 +1,91 @@
+/* .main-article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-article input, .main-article textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.main-article button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+} */
+
+/* Main Article Layout for iPad-like Experience */
+.main-article {
+  width: 80vw;  /* Use 80% of the viewport width */
+  max-width: 1400px; /* Limit the maximum width to maintain readability */
+  aspect-ratio: 4 / 3;  /* Maintain the iPad Pro's aspect ratio */
+  margin: 50px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Input */
+.main-article input[type="text"] {
+  width: 100%;
+  height: 60px;  /* Larger title input */
+  padding: 15px;
+  font-size: 24px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Content Textarea */
+.main-article textarea {
+  width: 100%;
+  height: 400px;  /* Increased height for better editing */
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  resize: none;  /* Disable manual resizing */
+}
+
+/* Writer Input */
+.main-article input[type="text"]:nth-of-type(2) {
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  align-self: flex-end;  /* Align the writer input to the right */
+}
+
+/* Save Button */
+.main-article button {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-article button:hover {
+  background: #555;
+}
+

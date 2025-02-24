@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Memo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/ipad_frame.css">
+    <link rel="stylesheet" href="./css/article_header.css">
+    <link rel="stylesheet" href="./css/main_article.css">
+</head>
+<body>
+    <div class="ipad-frame">
+        <header class="article-header">
+            <button class="back-button">&lt; 목록으로</button>
+            <h1>메모 작성</h1>
+        </header>
+        <main class="main-article">
+            <input type="text" placeholder="제목을 입력하세요">
+            <textarea placeholder="내용을 입력하세요"></textarea>
+            <input type="text" placeholder="작성자 이름">
+            <button onclick="addBoard()">저장</button>
+        </main>
+    </div>
+    <script src="./script/article_service.js"></script>
+</body>
+</html>

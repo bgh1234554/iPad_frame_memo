@@ -1,0 +1,90 @@
+/* Board List Container */
+.board-list-container {
+  padding: 20px;
+}
+
+/* Individual Memo Box */
+.board-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  cursor: pointer;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.board-box:hover {
+  background: #f0f0f0;
+}
+
+/* Memo Content */
+.memo-content {
+  flex: 1;
+  padding-right: 10px;
+  font-family: 'SF Pro Display', Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Title */
+.board-box h1 {
+  font-size: 24px;  /* Increased for better visibility */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Writer */
+.board-box h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Content Preview */
+.board-box pre {
+  font-size: 18px;  /* Increased for better readability */
+  color: #444;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.6;
+  max-height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 6px 12px;  /* Reduced button size */
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'SF Pro Display', Arial, sans-serif;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
